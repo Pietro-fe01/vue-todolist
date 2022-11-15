@@ -137,4 +137,5 @@ main.to-do{
     EFFECTS
 -----------------------*/
 .to-do__list_container ul li .delete-icon:hover{
+    color: red;
 }
