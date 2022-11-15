@@ -6,3 +6,88 @@
     padding: 0;
     margin: 0;
 }
+
+body{
+    background: linear-gradient(143deg, rgba(0,0,0,1) 0%, rgba(41,46,73,1) 46%);
+    height: 100vh;
+}
+
+/*------------------
+    COMMON 
+------------------*/
+.container{
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+}
+
+/*------------------
+    HEADER 
+------------------*/
+header{
+    text-align: center;
+}
+
+header #logo{
+    width: 45%;
+    margin: .625rem;
+}
+
+/*------------------
+    MAIN
+------------------*/
+main.to-do{
+    padding: 1.25rem 0;
+}
+
+/*--------------------
+    MAIN INPUT FORM
+---------------------*/
+.to-do__inputform{
+    text-align: center;
+}
+
+.to-do__inputform input,
+.to-do__inputform button{
+    padding: .625rem .9375rem;
+    border-radius: .625rem;
+    margin: 0 .3125rem;
+}
+
+.to-do__inputform input{
+    cursor: text;
+    width: 21.25rem;
+}
+
+.to-do__inputform button{
+    cursor: pointer;
+    width: 6.25rem;
+}
+
+/*----------------------
+    MAIN LIST CONTAINER
+-----------------------*/
+.to-do__list_container{
+    background-color: #f3f6f6;
+    margin: 1.875rem 3.125rem;
+    padding: 1.875rem;
+    border-radius: .625rem;
+}
+
+.to-do__list_container ul{
+    color: black;
+    list-style: none;
+}
+
+.to-do__list_container ul li{
+    border-bottom: 3.5px solid #e7eaec;
+    padding: 0 .8125rem .4375rem .8125rem;
+    margin-bottom: .75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.to-do__list_container ul li .delete-icon{
+    cursor: pointer;
+}

@@ -6,12 +6,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>To do List</title>
         <link rel="stylesheet" href="css/style.css">
+        <!-- Fontawesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- /Fontawesome CDN -->
         <!-- Vue.js CDN -->
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <!-- /Vue.js CDN -->
     </head>
     <body>
-        <div id="app"></div>
+        <div id="app">
+            <div class="container">
+                <!-- Logo -->
+                <header>
+                    <img id="logo" src="img/logo-boolean.png" alt="">
+                </header>
+                <!-- Logo -->
+
+                <!-- To DO Heart -->
+                <main class="to-do">
+                    <!-- to-do input e button -->
+                    <form class="to-do__inputform">
+                        <input type="text" placeholder="Inserisci attività">
+                        <button type="submit">Aggiungi</button>
+                    </form>
+                    <!-- /to-do input e button -->
+
+                    <!-- container dove andranno le task to do -->
+                    <div class="to-do__list_container">
+                        <ul>
+                            <li>
+                                <h3>Fare i compiti</h3>
+                                <i class="delete-icon fa-regular fa-trash-can"></i>
+                            </li>
+                            <li>
+                                <h3>Passeggiata</h3>
+                                <i class="delete-icon fa-regular fa-trash-can"></i>
+                            </li>
+                            <li>
+                                <h3>Fare la spesa</h3>
+                                <i class="delete-icon fa-regular fa-trash-can"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /container dove andranno le task to do -->
+                </main>
+                <!-- /To DO Heart -->
+            </div>
+        </div>
 
         <script src="js/main.js"></script>
     </body>
