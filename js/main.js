@@ -35,6 +35,13 @@ createApp({
             const newToDo = new this.createNewObj(this.textInput, false);
             this.toDoList.push(newToDo);
             this.textInput = "";
+        },
+        checkUncheck: function(i){
+            if(this.toDoList[i].done){
+                this.toDoList[i].done = false;
+            } else {
+            this.toDoList[i].done = true;
+            }
         }
     },
 }).mount('#app')

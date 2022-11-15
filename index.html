@@ -35,7 +35,7 @@
                     <div class="to-do__list_container">
                         <ul v-if="toDoList.length > 0">
                             <li v-for="(element, index) in toDoList">
-                                <h3 :class="{ task_done : element.done }">{{ element.text }}</h3>
+                                <h3 :class="{ task_done : element.done }" @click="checkUncheck(index)">{{ element.text }}</h3>
 
                                 <!-- Trash Icon -->
                                 <i class="delete-icon fa-regular fa-trash-can" @click="deleteToDo(index)"></i>
