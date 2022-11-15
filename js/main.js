@@ -30,6 +30,7 @@ createApp({
             }
         }
     },
+
     methods: {
         // Funzione che elimina una determinata task cliccata
         deleteToDo: function(i){
@@ -50,4 +51,6 @@ createApp({
             }
         }
     },
+    
 }).mount('#app')
+
