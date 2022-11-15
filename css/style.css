@@ -95,6 +95,6 @@ main.to-do{
 /*----------------------
     UTILITIES (JS)
 -----------------------*/
-.task-done{
+.task_done{
     text-decoration: line-through;
 }

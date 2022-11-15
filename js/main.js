@@ -6,7 +6,7 @@ createApp({
             toDoList: [
                 {
                     text: 'Fare i compiti',
-                    done: false
+                    done: true
                 },
                 {
                     text: 'Fare la spesa',

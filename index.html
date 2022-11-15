@@ -34,8 +34,10 @@
                     <!-- container dove andranno le task to do -->
                     <div class="to-do__list_container">
                         <ul>
-                            <li v-for="toDo in toDoList">
-                                <h3>{{ toDo.text }}</h3>
+                            <li v-for="(element) in toDoList">
+                                <h3 :class="{ task_done : element.done }">{{ element.text }}</h3>
+
+                                <!-- Trash Icon -->
                                 <i class="delete-icon fa-regular fa-trash-can"></i>
                             </li>
                         </ul>
