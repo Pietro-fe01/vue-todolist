@@ -88,7 +88,8 @@ main.to-do{
     align-items: center;
 }
 
-.to-do__list_container ul li .delete-icon{
+.to-do__list_container ul li .delete-icon,
+.to-do__list_container ul li h3{
     cursor: pointer;
 }
 
@@ -97,6 +98,7 @@ main.to-do{
 -----------------------*/
 .task_done{
     text-decoration: line-through;
+    color: red;
 }
 
 .text-center{
