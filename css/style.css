@@ -18,7 +18,11 @@ body{
 .container{
     max-width: 800px;
     margin: auto;
-    background-color: white;
+    background: linear-gradient(
+        135deg,
+        #8052ec,
+        #d161ff
+    );
 }
 
 /*------------------
@@ -44,7 +48,11 @@ main.to-do{
     MAIN INPUT FORM
 ---------------------*/
 .to-do__inputform{
-    text-align: center;
+    background-color: white;
+    width: 65%;
+    margin: auto;
+    padding: 1.875rem 1.5625rem;
+    border-radius: .625rem;
 }
 
 .to-do__inputform input,
@@ -52,6 +60,7 @@ main.to-do{
     padding: .625rem .9375rem;
     border-radius: .625rem;
     margin: 0 .3125rem;
+    border: 1px solid #d1d3d4;
 }
 
 .to-do__inputform input{
@@ -59,9 +68,15 @@ main.to-do{
     width: 21.25rem;
 }
 
+.to-do__inputform input:focus{
+    background-color: rgba(128, 82, 236, 0.3);
+}
+
 .to-do__inputform button{
     cursor: pointer;
     width: 6.25rem;
+    background-color: #8052ec;
+    color: white;
 }
 
 /*----------------------
@@ -80,7 +95,7 @@ main.to-do{
 }
 
 .to-do__list_container ul li{
-    border-bottom: 3.5px solid #e7eaec;
+    border-bottom: 3px solid #d1d3d4;
     padding: 0 .8125rem .4375rem .8125rem;
     margin-bottom: .75rem;
     display: flex;
@@ -91,6 +106,19 @@ main.to-do{
 .to-do__list_container ul li .delete-icon,
 .to-do__list_container ul li h3{
     cursor: pointer;
+}
+
+.to-do__list_container ul li h3{
+    font-style: italic;
+}
+
+.to-do__list_container ul li .delete-icon{
+    background-color: #8052ec;
+    color: white;
+    width: 1.875rem;
+    height: 1.875rem;
+    text-align: center;
+    line-height: 1.875rem;
 }
 
 /*----------------------
@@ -109,5 +137,4 @@ main.to-do{
     EFFECTS
 -----------------------*/
 .to-do__list_container ul li .delete-icon:hover{
-    color: red;
 }

@@ -10,7 +10,7 @@ createApp({
                 },
                 {
                     text: 'Fare la spesa',
-                    done: false
+                    done: true
                 },
                 {
                     text: 'Portare il cane al parco',
