@@ -16,13 +16,25 @@ createApp({
                     text: 'Portare il cane al parco',
                     done: false
                 },
-            ]
+            ],
+            textInput: '',
+            createNewObj: class {
+                constructor(text, done){
+                    this.text = text;
+                    this.done = done;
+                }
+            }
         }
     },
     methods: {
         // Funzione che elimina una determinata task cliccata
         deleteToDo: function(i){
-            this.toDoList.splice(i, 1)
+            return this.toDoList.splice(i, 1);
+        },
+        addToDo: function(){
+            const newToDo = new this.createNewObj(this.textInput, false);
+            this.toDoList.push(newToDo);
+            this.textInput = "";
         }
     },
 }).mount('#app')
