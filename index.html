@@ -34,16 +34,8 @@
                     <!-- container dove andranno le task to do -->
                     <div class="to-do__list_container">
                         <ul>
-                            <li>
-                                <h3>Fare i compiti</h3>
-                                <i class="delete-icon fa-regular fa-trash-can"></i>
-                            </li>
-                            <li>
-                                <h3>Passeggiata</h3>
-                                <i class="delete-icon fa-regular fa-trash-can"></i>
-                            </li>
-                            <li>
-                                <h3>Fare la spesa</h3>
+                            <li v-for="toDo in toDoList">
+                                <h3>{{ toDo.text }}</h3>
                                 <i class="delete-icon fa-regular fa-trash-can"></i>
                             </li>
                         </ul>

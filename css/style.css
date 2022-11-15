@@ -91,3 +91,10 @@ main.to-do{
 .to-do__list_container ul li .delete-icon{
     cursor: pointer;
 }
+
+/*----------------------
+    UTILITIES (JS)
+-----------------------*/
+.task-done{
+    text-decoration: line-through;
+}
