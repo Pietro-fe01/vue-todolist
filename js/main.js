@@ -20,6 +20,9 @@ createApp({
         }
     },
     methods: {
-
+        // Funzione che elimina una determinata task cliccata
+        deleteToDo: function(i){
+            this.toDoList.splice(i, 1)
+        }
     },
 }).mount('#app')

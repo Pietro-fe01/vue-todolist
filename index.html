@@ -33,14 +33,15 @@
 
                     <!-- container dove andranno le task to do -->
                     <div class="to-do__list_container">
-                        <ul>
-                            <li v-for="(element) in toDoList">
+                        <ul v-if="toDoList.length > 0">
+                            <li v-for="(element, index) in toDoList">
                                 <h3 :class="{ task_done : element.done }">{{ element.text }}</h3>
 
                                 <!-- Trash Icon -->
-                                <i class="delete-icon fa-regular fa-trash-can"></i>
+                                <i class="delete-icon fa-regular fa-trash-can" @click="deleteToDo(index)"></i>
                             </li>
                         </ul>
+                        <h2 v-else class="text-center">Nessun elemento presente nella lista delle cose da fare.</h2>
                     </div>
                     <!-- /container dove andranno le task to do -->
                 </main>
