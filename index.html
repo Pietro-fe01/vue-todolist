@@ -26,7 +26,7 @@
                 <main class="to-do">
                     <!-- to-do input e button -->
                     <form class="to-do__inputform" @submit.prevent="addToDo">
-                        <input type="text" placeholder="Inserisci attività" v-model="textInput" required>
+                        <input type="text" placeholder="Inserisci attività" v-model="textInput" required minlength="4">
                         <button type="submit">Aggiungi</button>
                     </form>
                     <!-- /to-do input e button -->

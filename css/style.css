@@ -104,3 +104,10 @@ main.to-do{
 .text-center{
     text-align: center;
 }
+
+/*----------------------
+    EFFECTS
+-----------------------*/
+.to-do__list_container ul li .delete-icon:hover{
+    color: red;
+}
