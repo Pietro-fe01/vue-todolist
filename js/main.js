@@ -16,6 +16,10 @@ createApp({
                     text: 'Portare il cane al parco',
                     done: false
                 },
+                {
+                    text: 'Comprare il pane',
+                    done: false
+                },
             ],
             textInput: '',
             createNewObj: class {
